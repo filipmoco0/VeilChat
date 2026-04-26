@@ -1,8 +1,8 @@
-# VeilChat
+# Nymble
 
-**Private rooms. No accounts. Your link.**
+**Private rooms. Temporary links. No accounts.**
 
-VeilChat is an experimental self-hosted private chat prototype. It lets you start a tiny local chat server, create a temporary public link, and invite someone with a simple room code.
+Nymble is an experimental self-hosted private chat prototype. It lets you start a tiny local chat server, create a temporary public link, and invite someone with a simple room code.
 
 No accounts. No database. No stored chat history.
 
@@ -16,24 +16,32 @@ No accounts. No database. No stored chat history.
 
 Download the latest alpha release here:
 
-[VeilChat v0.1.1 Alpha](../../releases/tag/v0.1.1-alpha)
+[Nymble v0.1.1 Alpha](../../releases/tag/v0.1.1-alpha)
 
 Then unzip it and open the `Windows` or `Mac` folder.
 
+```text
+Windows users:
+START NYMBLE.bat
+
+Mac users:
+START NYMBLE.command
+```
+
 ---
 
-## What is VeilChat?
+## What is Nymble?
 
-VeilChat is a small self-hosted chat app designed around a simple idea:
+Nymble is a small self-hosted chat app designed around a simple idea:
 
-1. One person starts VeilChat.
-2. VeilChat creates a temporary public link.
+1. One person starts Nymble.
+2. Nymble creates a temporary public link.
 3. The host sends that link to a friend.
 4. The host creates a room code like `BLUE-FOX-42`.
 5. The friend enters the code.
 6. Chat starts.
 
-VeilChat is built to be easy to test with normal users while avoiding accounts, signups, databases, and paid hosting.
+Nymble is built to be easy to test with normal users while avoiding accounts, signups, databases, and paid hosting.
 
 ---
 
@@ -57,8 +65,8 @@ VeilChat is built to be easy to test with normal users while avoiding accounts, 
 - **Relay Privacy Mode**  
   Optional fallback mode where messages are encrypted in the browser and relayed through the host server instead of using direct peer-to-peer WebRTC.
 
-- **Full-Screen Chat View**  
-  A clean chat-only view for a better conversation experience.
+- **Focus Chat**  
+  In-page full-screen chat mode designed to work better on phones than opening a separate chat tab.
 
 - **Windows and macOS Starters**  
   Simple double-click start scripts for non-technical testers.
@@ -74,7 +82,7 @@ Download the latest release ZIP and choose your platform folder.
 Double-click:
 
 ```text
-START VEILCHAT.bat
+START NYMBLE.bat
 ```
 
 ### macOS
@@ -82,7 +90,7 @@ START VEILCHAT.bat
 Double-click:
 
 ```text
-START VEILCHAT.command
+START NYMBLE.command
 ```
 
 If macOS blocks the file, right-click it and choose **Open**.
@@ -93,9 +101,9 @@ If macOS blocks the file, right-click it and choose **Open**.
 
 ### Different Wi-Fi / Remote Testing
 
-1. Host opens `START VEILCHAT`.
-2. VeilChat starts a local server.
-3. VeilChat creates a temporary Cloudflare public link.
+1. Host opens `START NYMBLE`.
+2. Nymble starts a local server.
+3. Nymble creates a temporary Cloudflare public link.
 4. Host sends the `trycloudflare.com` link to a friend.
 5. Friend opens the link in a browser.
 6. Host creates a **Room Code**.
@@ -142,7 +150,7 @@ In Relay Privacy mode:
 
 ## Important Security Notes
 
-VeilChat is an alpha prototype. It is not a finished secure messenger.
+Nymble is an alpha prototype. It is not a finished secure messenger.
 
 Please do not market or use it as:
 
@@ -160,7 +168,7 @@ A more accurate description is:
 experimental self-hosted private chat prototype
 ```
 
-### What VeilChat does well
+### What Nymble does well
 
 - No accounts
 - No central database
@@ -175,7 +183,7 @@ experimental self-hosted private chat prototype
 - The host machine can see server activity metadata.
 - WebRTC mode may expose peer network information.
 - The encryption design has not been independently audited.
-- Room codes can be shared or guessed if made too short.
+- Room codes can be shared or guessed if exposed.
 - Browser security depends on the environment where the app is served.
 - This is not designed for high-risk communication.
 
@@ -202,16 +210,16 @@ No `npm install` is required.
 ## Project Structure
 
 ```text
-VeilChat/
+Nymble/
 ├─ Windows/
-│  ├─ START VEILCHAT.bat
-│  ├─ STOP VEILCHAT.bat
+│  ├─ START NYMBLE.bat
+│  ├─ STOP NYMBLE.bat
 │  ├─ server.js
 │  └─ public/
 │
 ├─ Mac/
-│  ├─ START VEILCHAT.command
-│  ├─ STOP VEILCHAT.command
+│  ├─ START NYMBLE.command
+│  ├─ STOP NYMBLE.command
 │  ├─ server.js
 │  └─ public/
 │
@@ -220,14 +228,14 @@ VeilChat/
 
 ---
 
-## Stopping VeilChat
+## Stopping Nymble
 
 ### Windows
 
 Double-click:
 
 ```text
-STOP VEILCHAT.bat
+STOP NYMBLE.bat
 ```
 
 Or close the server windows.
@@ -245,16 +253,16 @@ inside the terminal window.
 Or double-click:
 
 ```text
-STOP VEILCHAT.command
+STOP NYMBLE.command
 ```
 
 ---
 
-## Why VeilChat Exists
+## Why Nymble Exists
 
 Most chat apps require accounts, phone numbers, servers, or databases.
 
-VeilChat explores a different approach:
+Nymble explores a different approach:
 
 ```text
 temporary rooms
@@ -332,7 +340,7 @@ MIT License
 
 ## Disclaimer
 
-VeilChat is experimental software.
+Nymble is experimental software.
 
 It is provided for learning, testing, and prototyping. It has not been audited and should not be used for sensitive, high-risk, or safety-critical communication.
 
