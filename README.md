@@ -12,6 +12,16 @@ No accounts. No database. No stored chat history.
 
 ---
 
+## Download
+
+Download the latest alpha release here:
+
+[VeilChat v0.1.0 Alpha](../../releases/tag/v0.1.0-alpha)
+
+Then unzip it and open the `Windows` or `Mac` folder.
+
+---
+
 ## What is VeilChat?
 
 VeilChat is a small self-hosted chat app designed around a simple idea:
