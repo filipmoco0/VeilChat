@@ -65,3 +65,265 @@ Double-click:
 
 ```text
 START VEILCHAT.bat
+```
+
+### macOS
+
+Double-click:
+
+```text
+START VEILCHAT.command
+```
+
+If macOS blocks the file, right-click it and choose **Open**.
+
+---
+
+## How to Connect
+
+### Different Wi-Fi / Remote Testing
+
+1. Host opens `START VEILCHAT`.
+2. VeilChat starts a local server.
+3. VeilChat creates a temporary Cloudflare public link.
+4. Host sends the `trycloudflare.com` link to a friend.
+5. Friend opens the link in a browser.
+6. Host creates a **Room Code**.
+7. Friend enters the **Room Code**.
+8. Chat starts.
+
+### Same Wi-Fi
+
+You can use the same flow with the public link, or open the local address shown in the server window.
+
+For non-technical users, the public link flow is usually simpler.
+
+---
+
+## Modes
+
+### Room Code
+
+The default mode.
+
+Use this first.
+
+```text
+Host: Create Room Code
+Guest: Enter Room Code
+```
+
+Best for normal testing and simple conversations.
+
+### Relay Privacy
+
+Fallback and privacy-focused mode.
+
+Use this when Room Code does not connect, or when you want to avoid direct peer-to-peer connection.
+
+In Relay Privacy mode:
+
+- Peers do not connect directly to each other.
+- Messages are encrypted in the browser.
+- The host server forwards encrypted packets.
+- The server still sees metadata such as timing and IP connections.
+
+---
+
+## Important Security Notes
+
+VeilChat is an alpha prototype. It is not a finished secure messenger.
+
+Please do not market or use it as:
+
+```text
+anonymous
+untraceable
+military-grade secure
+zero metadata
+production-ready encrypted messenger
+```
+
+A more accurate description is:
+
+```text
+experimental self-hosted private chat prototype
+```
+
+### What VeilChat does well
+
+- No accounts
+- No central database
+- No stored chat history
+- Temporary rooms
+- Simple self-hosted flow
+- Optional encrypted relay mode
+
+### Current limitations
+
+- Cloudflare Tunnel can see connection metadata.
+- The host machine can see server activity metadata.
+- WebRTC mode may expose peer network information.
+- The encryption design has not been independently audited.
+- Room codes can be shared or guessed if made too short.
+- Browser security depends on the environment where the app is served.
+- This is not designed for high-risk communication.
+
+---
+
+## Requirements
+
+Users need:
+
+```text
+Node.js
+```
+
+Download Node.js here:
+
+```text
+https://nodejs.org/
+```
+
+No `npm install` is required.
+
+---
+
+## Project Structure
+
+```text
+VeilChat/
+├─ Windows/
+│  ├─ START VEILCHAT.bat
+│  ├─ STOP VEILCHAT.bat
+│  ├─ server.js
+│  └─ public/
+│
+├─ Mac/
+│  ├─ START VEILCHAT.command
+│  ├─ STOP VEILCHAT.command
+│  ├─ server.js
+│  └─ public/
+│
+└─ README.md
+```
+
+---
+
+## Stopping VeilChat
+
+### Windows
+
+Double-click:
+
+```text
+STOP VEILCHAT.bat
+```
+
+Or close the server windows.
+
+### macOS
+
+Press:
+
+```text
+Control + C
+```
+
+inside the terminal window.
+
+Or double-click:
+
+```text
+STOP VEILCHAT.command
+```
+
+---
+
+## Why VeilChat Exists
+
+Most chat apps require accounts, phone numbers, servers, or databases.
+
+VeilChat explores a different approach:
+
+```text
+temporary rooms
+self-hosted access
+simple codes
+no stored history
+no signup
+```
+
+The goal is not to replace mature secure messengers. The goal is to experiment with lightweight, self-hosted private communication that normal people can test quickly.
+
+---
+
+## Roadmap
+
+Possible future improvements:
+
+- Better mobile interface
+- One-click packaged desktop app
+- Built-in updater
+- Stronger room approval flow
+- Better relay encryption design
+- Optional password-protected rooms
+- Rate limits for room code attempts
+- Better connection diagnostics
+- Native app packaging
+- Security review and threat model documentation
+- Optional Tor/onion mode
+- Optional Tailscale/Funnel mode
+
+---
+
+## Development
+
+Run manually:
+
+```bash
+node server.js
+```
+
+Then open:
+
+```text
+http://localhost:8080
+```
+
+The app uses only Node.js built-in modules.
+
+No database is required.
+
+---
+
+## Contributing
+
+Contributions are welcome, especially around:
+
+- UI/UX improvements
+- Mobile layout
+- Connection reliability
+- Privacy/security review
+- Documentation
+- Packaging
+- Testing on Windows/macOS/Linux
+- Browser compatibility
+
+Before making security claims, please document the threat model and limitations clearly.
+
+---
+
+## License
+
+MIT License
+
+---
+
+## Disclaimer
+
+VeilChat is experimental software.
+
+It is provided for learning, testing, and prototyping. It has not been audited and should not be used for sensitive, high-risk, or safety-critical communication.
+
+Use at your own risk.
