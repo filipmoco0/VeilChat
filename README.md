@@ -1,7 +1,7 @@
 # Nymble
 
 <p align="center">
-  <img src="assets/images/nymble-logo-horizontal.png" alt="Nymble logo" width="640">
+  <img src="assets/images/nymble-logo-horizontal.svg" alt="Nymble logo" width="640">
 </p>
 
 **Private rooms. Temporary links. No accounts.**
