@@ -1,5 +1,9 @@
 # Nymble
 
+<p align="center">
+  <img src="assets/images/nymble-logo-horizontal.png" alt="Nymble logo" width="640">
+</p>
+
 **Private rooms. Temporary links. No accounts.**
 
 Nymble is an experimental self-hosted private chat prototype. It lets you start a tiny local chat server, create a temporary public link, and invite someone with a simple room code.
