@@ -1,0 +1,31 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nymbleGradient" x1="160" y1="160" x2="864" y2="864" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="0.48" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="nymbleShade" x1="230" y1="120" x2="520" y2="860" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.14"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left vertical ribbon -->
+  <path d="M228 220C228 176 264 140 308 140H372C395 140 416 149 432 166L812 546C843 577 843 627 812 658C781 689 731 689 700 658L404 362V754C404 798 368 834 324 834H308C264 834 228 798 228 754V220Z" fill="url(#nymbleGradient)"/>
+
+  <!-- Right vertical ribbon -->
+  <path d="M620 270C620 226 656 190 700 190H776C820 190 856 226 856 270V804C856 848 820 884 776 884H730C707 884 686 875 670 858L270 458C239 427 239 377 270 346C301 315 351 315 382 346L680 644V270H620Z" fill="url(#nymbleGradient)" opacity="0.98"/>
+
+  <!-- Chat tail cut/shaped lower detail -->
+  <path d="M300 752H414L468 806L424 868L360 804H300V752Z" fill="url(#nymbleGradient)"/>
+
+  <!-- Subtle highlight overlay -->
+  <path d="M228 220C228 176 264 140 308 140H372C395 140 416 149 432 166L812 546C843 577 843 627 812 658C781 689 731 689 700 658L404 362V754C404 798 368 834 324 834H308C264 834 228 798 228 754V220Z" fill="url(#nymbleShade)"/>
+
+  <!-- Chat dots -->
+  <circle cx="670" cy="270" r="18" fill="white" opacity="0.95"/>
+  <circle cx="724" cy="270" r="18" fill="white" opacity="0.95"/>
+  <circle cx="778" cy="270" r="18" fill="white" opacity="0.95"/>
+</svg>
