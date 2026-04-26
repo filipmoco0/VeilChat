@@ -16,7 +16,7 @@ No accounts. No database. No stored chat history.
 
 Download the latest alpha release here:
 
-[VeilChat v0.1.0 Alpha](../../releases/tag/v0.1.1-alpha)
+[VeilChat v0.1.1 Alpha](../../releases/tag/v0.1.1-alpha)
 
 Then unzip it and open the `Windows` or `Mac` folder.
 
