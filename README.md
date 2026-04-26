@@ -20,7 +20,7 @@ No accounts. No database. No stored chat history.
 
 Download the latest alpha release here:
 
-[Nymble v0.1.1 Alpha](../../releases/tag/v0.1.1-alpha)
+[Nymble v0.1.2 Alpha](../../releases/tag/v0.1.2-alpha)
 
 Then unzip it and open the `Windows` or `Mac` folder.
 
